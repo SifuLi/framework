@@ -341,7 +341,7 @@ abstract class Paginator implements ArrayAccess, Countable, IteratorAggregate, J
     {
         try {
             $total = $this->total();
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $total = null;
         }
 
